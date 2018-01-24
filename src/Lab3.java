@@ -27,14 +27,15 @@ public class Lab3 {
 		
 
 			// Set up table
-			System.out.println("\nNumber   \tSquared  \tCubed");
-			System.out.println("=======  \t=======  \t======");
+			System.out.printf("%-15s %-15s %-15s \n", "Number", "Squared", "Cubed");
+			System.out.printf("%-15s %-15s %-15s \n", "=======", "=======", "======");
 
 			// Add to table for number entered
 			for (i = 1; i <= userNumber; ++i) {
 				squared = i * i;
 				cubed = i * i * i;
-				System.out.println(i + "   \t\t" + squared + "  \t\t" + cubed);
+				System.out.printf("%-15d %-15d %-15d \n", i, squared, cubed);
+				// System.out.println(i + " \t\t" + squared + " \t\t" + cubed);
 			}
 
 			// Kill loop or continue with more?
